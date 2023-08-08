@@ -1,0 +1,114 @@
+/* Styles pour le header */
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 5px;
+	
+}
+header h1 {
+	margin: 0;
+	text-align: center;
+}
+
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+nav li:last-child {
+	margin-right: 0;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+/* Styles pour le main */
+main {
+	background-size: cover;
+  background-image: url(image/electrotechnique.jpg);
+	padding: 50px;
+}
+/* Styles pour le footer */
+footer {
+	background-color: #ccc;
+	color: #333;
+	padding: 10px;
+	padding-block: 10px;
+	text-align: center;
+}
+/* Style pour les images */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+
+}
+.background-image {
+	background-color: white;
+	
+	background-position: center;
+	height: 15vh;
+	margin: 50px 50px 50px 50px;
+  }
+  .taille {
+	width: auto;
+	background-color: aqua;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 20px;
+	font-size: 50px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .tal {
+	width: auto;
+	background-color: rgb(122, 55, 11);
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 40px;
+	padding: 5px;
+  }
+  
+  .background {
+	background-image: url(image/gc.jpg);
+	
+	background-position: center;
+	height: 15vh;
+	margin: 50px 50px 50px 50px;
+  }
+  
+ div nav ul li {
+	text-decoration-color: brown;
+	color: brown;
+	background-color: black;
+ }
+ .back {
+	background-image: url(image/industrie1.jpg);
+	
+	background-position: center;
+	height: 15vh;
+	margin: 50px 50px 50px 50px;
+  }
+  .ba {
+	background-image: none;
+	background-color: rgb(182, 128, 11);
+	background-position: center;
+	height: 15vh;
+	margin: 50px 50px 50px 50px;
+  }
+  .nav {
+	background-color: azure;
+	padding: 20px;
+	font-size: 20px;
+
+  }
+ 

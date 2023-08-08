@@ -1,0 +1,71 @@
+/* Styliser les titres */
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  
+  h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Styliser la liste */
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+  }
+  
+  /* Styliser les liens */
+  a {
+    color: #337ab7;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Ajouter un style aux liens actifs */
+  a:active,
+  a:focus {
+    outline: none;
+  }
+  
+  /* Ajouter un style aux liens visités */
+  a:visited {
+    color: #8c8c8c;
+  }
+  
+  /* Ajouter un espace entre les cours */
+  li {
+    margin-bottom: 5px;
+  }
+  
+  /* Ajouter une bordure aux départements */
+  ul ul {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Styliser les pages de cours dédiées */
+  .page-cours {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+  }
+  

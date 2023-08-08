@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Page d'accueil du lycée</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+	<style>
+		.info-window {
+		  display: none;
+		  position: fixed;
+		  top: 50%;
+		  left: 50%;
+		  transform: translate(-50%, -50%);
+		  background: chartreuse;
+		  padding: 10px;
+		  border: 1px solid #ccc;
+		}
+	  </style>
+</head>
+<body>
+	<header><img width="80px" src="image/logo.jpeg" alt="logo" id="logo">
+		<h1>Lycée les leaders</h1>
+		<br>
+		<br>
+		<nav> 
+			<ul>
+				<li><a href="#">Accueil</a></li>
+				<li><a href="parcours.html" onmouseover="openInfoWindow('parcours')">Parcours</a></li>
+				<li><a href="admission.html" onmouseover="openInfoWindow('admission')">Admission</a></li>
+				<li><a href="galerie.html"  href="#" onmouseover="openInfoWindow('galerie')">Galerie</a></li>
+			</ul>
+		</nav>
+	</header>
+	<hr>
+	<marquee bgcolor="blue"  behavior="alternate">
+	<main class="background">
+		<h2>Bienvenue sur la page d'accueil du Lycée les leaders !</h2>
+		<p>Cette page vous permet de vous tenir informé des dernières actualités du lycée et de découvrir tout ce que notre établissement a à offrir.</p>
+	</main>
+	</marquee>
+	<marquee bgcolor="red"  behavior="alternate">
+	<main class="back">
+		<section>
+			<h2>Dernières actualités</h2>
+			<ul>
+				<li><a href="#">Remise des diplômes aux étudiants de la promotion 2023</a></li>
+				<li><a href="#">Ouverture des inscriptions pour l'année scolaire 2024-2025</a></li>
+				<li><a href="#">Conférence sur les opportunités de carrière dans le domaine de l'informatique</a></li>
+			</ul>
+		</section>
+	</main>
+	</marquee>
+	<main class="ba">
+		<section>
+			<h3>À propos de notre lycée</h3>
+			<p>Le Lycée les leaders est un établissement d'enseignement réputé offrant une formation de qualité et des opportunités d'apprentissage exceptionnelles. Notre lycée se concentre sur le développement académique, professionnel et personnel de nos étudiants, en les préparant pour un avenir prometteur.</p>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2022-2023 Lycée les leaders</p>
+	</footer>
+
+	<script>
+		function openInfoWindow(parcours, admission, galerie) {
+		  var infoWindow = document.createElement('div');
+		  infoWindow.className = 'info-window';
+		  
+		  var closeBtn = document.createElement('button');
+		  closeBtn.innerHTML = 'Fermer';
+		  closeBtn.onclick = function() {
+			infoWindow.parentNode.removeChild(infoWindow);
+		  };
+		  infoWindow.appendChild(closeBtn);
+		  
+		  var infoContent = document.createElement('p');
+		  
+		  if (section === 'parcours') {
+			infoContent.innerHTML = 'Informations sur les différents parcours proposés par le lycée.';
+		  } else if (section === 'admission') {
+			infoContent.innerHTML = 'Informations sur les modalités d\'admission et les conditions requises.';
+		  } else if (section === 'galerie') {
+			infoContent.innerHTML = 'Informations sur la galerie de photos du lycée.';
+		  }
+		  
+		  infoWindow.appendChild(infoContent);
+		  
+		  document.body.appendChild(infoWindow);
+		}
+	  </script>
+</body>
+</html>
